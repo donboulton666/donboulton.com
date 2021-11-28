@@ -43,10 +43,11 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Donald Boulton Personal Web Site' },
+              { name: 'keywords', content: 'Donald Boulton, personal' },
             ]}
           >
+            <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
             <html lang="en" />
           </Helmet>
           {content}

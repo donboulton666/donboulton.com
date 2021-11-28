@@ -14,13 +14,11 @@
      <div className="bio">
        <StaticImage
          className="bio-avatar"
-         layout="fixed"
+         objectPosition="50% 50%"
          formats={["auto", "webp"]}
          src="../images/donald-boulton.jpg"
-         width={70}
-         height={70}
          quality={95}
-         alt="Profile picture"
+         alt="Profile Picture"         
        />
      </div>
    )
