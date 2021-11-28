@@ -1,8 +1,6 @@
-# Don Boulton's Personal Site
+# gatsby-starter-dimension
 
-## gatsby-starter-dimension
-
-**This is a starter for Gatsby.js V4.**
+**This is a starter for Gatsby.js V2.**
 
 **The older V1 version of this starter can be found at:**
 <br/>
