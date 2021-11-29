@@ -5,7 +5,7 @@ import { RiCheckboxCircleLine } from "@react-icons/all-files/ri/RiCheckboxCircle
 import Layout from "../components/layout"
 
 const Thanks = () => (
-  <Layout className="thanks-page">
+  <Layout>
     <div
       className="wrapper"
       style={{
@@ -21,7 +21,12 @@ const Thanks = () => (
       <h1>Got your message</h1>
       <p>Thank you for getting in touch us. We will get back to you shortly.</p>
       <Link to="/" className="button">
-        <RiArrowLeftSLine className="icon -left" />
+        <RiArrowLeftSLine
+          style={{
+            fontSize: "1.5rem",
+            color: "gray",
+          }}        
+        />
         Lets go back to Homepage
       </Link>
     </div>
