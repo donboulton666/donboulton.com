@@ -1,3 +1,6 @@
+require('typeface-roboto')
+require('typeface-roboto-slab')
+
 export const onServiceWorkerUpdateReady = () => {
     const answer = window.confirm(
       `This application has been updated. ` +

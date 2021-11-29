@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
+import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
+import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
+import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
+import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -65,10 +69,50 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li>
+              <Link to="https://twitter.com/donboulton" className="icon fa-twitter" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+                <RiTwitterFill alt='Twitter'
+                  style={{
+                    fontSize: "2rem",
+                    color: "gray",
+                  }}
+                />
+                <span className="label">Twitter</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://facebook.com/donboulton" className="icon fa-facebook" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+                <RiFacebookBoxFill alt='Facebook'
+                  style={{
+                    fontSize: "2em",
+                    color: "gray",
+                  }}
+                />
+                <span className="label">Facebook</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www.instagram.com/boulton3662/" className="icon fa-instagram" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+                <RiInstagramFill alt='Instagram'
+                  style={{
+                    fontSize: "2em",
+                    color: "gray",
+                  }}
+                />
+                <span className="label">Instagram</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon fa-github" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+                <RiGithubFill alt='Github'
+                  style={{
+                    fontSize: "2em",
+                    color: "gray",
+                  }}
+                />
+                <span className="label">GitHub</span>
+              </Link>
+            </li>
           </ul>
           {close}
         </article>
