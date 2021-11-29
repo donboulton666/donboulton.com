@@ -5,9 +5,9 @@ import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
 import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
 import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../../static/assets/pic01.jpg'
+import pic02 from '../../static/assets/pic02.jpg'
+import pic03 from '../../static/assets/pic03.jpg'
 
 class Main extends React.Component {
   render() {

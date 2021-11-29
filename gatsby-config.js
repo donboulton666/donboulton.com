@@ -3,7 +3,7 @@ module.exports = {
     title: "Donald Boulton - Dimension V4",
     author: "Donald Boulton",
     siteUrl: "https://donboulton.com",
-    siteImage: "/src/images/bg.jpg",
+    siteImage: "/static/assets/bg.jpg",
     description: "A Gatsby.js V4 Starter based on Dimension by HTML5 UP"
   },
   plugins: [
@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images/`,
-        name: `images`,
+        path: `${__dirname}/static/assets/`,
+        name: `assets`,
       },
     },
     {
@@ -38,7 +38,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/apple-touch-icon.png', // This path is relative to the root of the site.
+        icon: 'static/assets/apple-touch-icon.png', // This path is relative to the root of the site.
       },
     },
     {

@@ -28,11 +28,22 @@ const NotFound = () => (
         </p>
       </header>
       <Link to="/" className="button">
-        <RiArrowLeftSLine className="icon -left" />
+        <RiArrowLeftSLine
+          style={{
+            fontSize: "1.5rem",
+            color: "gray",
+          }}
+        />
         Back to Homepage
       </Link>
-      <Link to="/contact" className="button -outline">
-        Report this <RiBugLine className="icon -right" />
+      <Link to="/#contact" className="button -outline">
+        Report this 
+        <RiBugLine
+          style={{
+            fontSize: "1.5rem",
+            color: "gray",
+          }}        
+        />
       </Link>
     </div>
   </Layout>
