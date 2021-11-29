@@ -47,5 +47,8 @@
   },
   "engines": {
     "node": ">=14.17.1"
+  },
+  "AWS_LAMBDA_JS_RUNTIME": {
+    "node": ">=14.17.1"
   }
 }
