@@ -21,14 +21,14 @@ const NotFound = () => (
             color: "gray",
           }}
         />
-        <h1>Oops we did not expect that to happen</h1>
+        <h1>Oops we did not expect that to happen!</h1>
         <p>
           Have you wondered into the unknown. Let us help you, Please take a look
           at below options
         </p>
       </header>
       <Link to="/" className="button">
-        <RiArrowLeftSLine
+        <RiArrowLeftSLine className="button-icon"
           style={{
             fontSize: "1.5rem",
             color: "gray",
@@ -38,7 +38,7 @@ const NotFound = () => (
       </Link>
       <Link to="https://twitter.com/donboulton" className="button -outline">
         Report this 
-        <RiBugLine
+        <RiBugLine className="button-icon"
           style={{
             fontSize: "1.5rem",
             color: "gray",
