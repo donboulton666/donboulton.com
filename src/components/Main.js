@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
 import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
 import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
-import pic01 from '../../static/assets/pic01.jpg'
-import pic02 from '../../static/assets/pic02.jpg'
-import pic03 from '../../static/assets/pic03.jpg'
+import { RiYoutubeFill, } from "@react-icons/all-files/ri/RiYoutubeFill"
 
 class Main extends React.Component {
   render() {
@@ -18,25 +17,55 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe"><h2 className="major">Bibwoe.com</h2></Link>
-          <span className="image main"><Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe"><img src={pic01} alt="Creation of All" /></Link></span>
-          <p>Basic Instructions Books While On Earth, Creation Of All <Link to="#work" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">awesome work</Link>.</p>
-          <p>Lorem ipsum dolor sit amet, </p>
+          <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+            <h2 className="major">Bibwoe.com</h2>
+          </Link>
+          <span className="image main">
+            <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <StaticImage
+                formats={["auto", "webp"]}
+                src="../../static/assets/pic01.jpg"
+                alt="Mansbooks" 
+              />
+            </Link>
+          </span>
+          <p>Basic Instructions Books While On Earth, Creation Of All <Link to="https://bibwoe.com/posts/creation-of-all" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">Bibwoe.com</Link>.</p>
+          <p>In the Beginning, everything was in Chaos, within the midst, “Void of Life”. Having a slight glow as all particles were slightly bouncing off each other. A slight vibrative movement, were the only actions. No binding force to create the attractions for life!</p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
           <h2 className="major">Mansbooks.com</h2>
-          <span className="image main"><img src={pic02} alt="Mansbooks" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+        </Link>
+          <span className="image main">
+            <Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
+              <StaticImage
+                formats={["auto", "webp"]}
+                src="../../static/assets/pic02.jpg"
+                alt="Mansbooks" 
+              />
+            </Link>
+          </span>
+          <p>Mansbooks.com is a place where all of mankind will keep his views on self. Once a year a new page can be added with updates on who you think you are within the context of your species.</p>
+          <p>Who are you and what are you, when the time comes to open the books of life, your views will be compared to Gods Books of life. Your views of self can be somewhat of a defense to what is held in Gods books of your life's iniquitous behaviors.</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Publiuslogic</h2>
-          <span className="image main"><img src={pic03} alt="PubliusLogic" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
+            <h2 className="major">PubliusLogic.com</h2>
+          </Link>
+          <span className="image main">
+            <Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
+              <StaticImage
+                formats={["auto", "webp"]}
+                src="../../static/assets/pic03.jpg"
+                alt="PubliusLogic" 
+              />
+            </Link>
+          </span>
+          <p>At PubliusLogic we Publish Logic as Common Sense. Publius was taken from The Federalist Papers and my extensive studies Of the USA Books at Large = Us Congressional Reports most of my focus was on Books I and II, including a lot of Notes and Letters from our Founding Fathers as well as reading all of the Publius publications and extensively studying the true intent of some. Logic part of the name came from Thomas Payne's book, "Common Sense", = Logic.</p>
           {close}
         </article>
 
@@ -70,7 +99,7 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <Link to="https://twitter.com/donboulton" className="icon fa-twitter" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://twitter.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
                 <RiTwitterFill alt='Twitter'
                   style={{
                     fontSize: "2rem",
@@ -81,7 +110,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://facebook.com/donboulton" className="icon fa-facebook" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://facebook.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
                 <RiFacebookBoxFill alt='Facebook'
                   style={{
                     fontSize: "2em",
@@ -92,7 +121,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://www.instagram.com/boulton3662/" className="icon fa-instagram" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://www.instagram.com/boulton3662/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
                 <RiInstagramFill alt='Instagram'
                   style={{
                     fontSize: "2em",
@@ -103,7 +132,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon fa-github" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
                 <RiGithubFill alt='Github'
                   style={{
                     fontSize: "2em",
@@ -111,6 +140,17 @@ class Main extends React.Component {
                   }}
                 />
                 <span className="label">GitHub</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://youtube.com/donboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+                <RiYoutubeFill alt='Youtube'
+                  style={{
+                    fontSize: "2em",
+                    color: "gray",
+                  }}
+                />
+                <span className="label">Youtube</span>
               </Link>
             </li>
           </ul>

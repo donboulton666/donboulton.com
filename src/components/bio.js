@@ -10,17 +10,17 @@
  
  const Bio = () => {
 
-   return (
-     <div className="bio">
-       <StaticImage
-         className="bio-avatar"
-         objectPosition="50% 50%"
-         formats={["auto", "webp"]}
-         src="../../static/assets/donald-boulton.jpg"
-         quality={95}
-         alt="Profile Picture"         
-       />
-     </div>
+  return (
+    <div className="bio">
+      <StaticImage
+        className="bio-avatar"
+        objectPosition="50% 50%"
+        formats={["auto", "webp"]}
+        src="../../static/assets/donald-boulton.jpg"
+        quality={95}
+        alt="Profile Picture"         
+      />
+    </div>
    )
  }
  

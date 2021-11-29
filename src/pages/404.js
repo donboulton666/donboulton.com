@@ -36,7 +36,7 @@ const NotFound = () => (
         />
         Back to Homepage
       </Link>
-      <Link to="/#contact" className="button -outline">
+      <Link to="https://twitter.com/donboulton" className="button -outline">
         Report this 
         <RiBugLine
           style={{
