@@ -45,9 +45,7 @@ const Privacy = () => (
            <h2>Cookies And Beacons</h2>
 
            <p>🍪 When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to</p>
-
-           <p> 🔗 \* <Link to="https://twitter.com/donboulton" alt="Twitter">Tweet.</Link></p>
-             the next time you tweet.
+           <p> 🔗 \* <Link to="https://twitter.com/donboulton" alt="Twitter">Twitter</Link> the next time you tweet.</p>             
         </p>
         <Link to="/" className="button">
           <RiArrowLeftSLine className="button-icon"
@@ -59,7 +57,7 @@ const Privacy = () => (
             Back to Homepage
         </Link>
         <Link to="https://publiuslogic.com" className="button -outline" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
-          PubliusLogic.com 
+          Full Privacy Page 
           <RiArrowRightSLine className="button-icon"
             style={{
               fontSize: "1.5rem",
