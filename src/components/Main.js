@@ -99,7 +99,7 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <Link to="https://twitter.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://twitter.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Twitter">
                 <RiTwitterFill alt='Twitter'
                   style={{
                     fontSize: "2rem",
@@ -110,7 +110,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://facebook.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://facebook.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Facebook">
                 <RiFacebookBoxFill alt='Facebook'
                   style={{
                     fontSize: "2em",
@@ -121,7 +121,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://www.instagram.com/boulton3662/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://www.instagram.com/boulton3662/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Instagram">
                 <RiInstagramFill alt='Instagram'
                   style={{
                     fontSize: "2em",
@@ -132,7 +132,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Github">
                 <RiGithubFill alt='Github'
                   style={{
                     fontSize: "2em",
@@ -143,7 +143,7 @@ class Main extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="https://youtube.com/donboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://youtube.com/donboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Youtube">
                 <RiYoutubeFill alt='Youtube'
                   style={{
                     fontSize: "2em",
