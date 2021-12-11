@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from "react"
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -8,15 +8,12 @@ import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
 import { RiYoutubeFill, } from "@react-icons/all-files/ri/RiYoutubeFill"
 
-class Main extends React.Component {
-  render() {
+const Main = (props) => {
+  const close = <div className="close" onClick={() => {props.onCloseArticle()}}></div>
+  return (
+      <div ref={props.setWrapperRef} id="main" style={props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-    let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
-
-    return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="intro" className={`${props.article === 'intro' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
             <h2 className="major">Bibwoe.com</h2>
           </Link>
@@ -34,7 +31,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="work" className={`${props.article === 'work' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
           <h2 className="major">Mansbooks.com</h2>
         </Link>
@@ -52,7 +49,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="about" className={`${props.article === 'about' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
             <h2 className="major">PubliusLogic.com</h2>
           </Link>
@@ -69,7 +66,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact Form</h2>
           <form
             className="contact-form"
@@ -158,8 +155,7 @@ class Main extends React.Component {
         </article>
 
       </div>
-    )
-  }
+  )
 }
 
 Main.propTypes = {
