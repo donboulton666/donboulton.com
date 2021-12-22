@@ -8,7 +8,7 @@
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title>Sitemap XML | Bibwoe.com</title>
+                <title>Sitemap XML | donboulton.com</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <link rel="shortcut icon" type="image/ico" href="https://bibwoe.com/favicon.ico" />
                 <link rel="sitemap" type="application/xml" title="Sitemap Index" href="/sitemap.xml" />
