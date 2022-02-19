@@ -140,7 +140,7 @@ const Main = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="https://youtube.com/donboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Youtube">
+              <Link to="https://youtube.com/users/donaldboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Youtube">
                 <RiYoutubeFill alt='Youtube'
                   style={{
                     fontSize: "2em",
