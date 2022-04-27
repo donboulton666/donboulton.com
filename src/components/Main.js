@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
+import { NetlifyForm, Honeypot, Recaptcha } from 'react-netlify-forms'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
 import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
@@ -9,6 +10,7 @@ import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
 import { RiYoutubeFill, } from "@react-icons/all-files/ri/RiYoutubeFill"
 
 const Main = (props) => {
+  const SITE_RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
   const close = <div className="close" onClick={() => {props.onCloseArticle()}}></div>
   return (
       <div ref={props.setWrapperRef} id="main" style={props.timeout ? {display: 'flex'} : {display: 'none'}}>
@@ -68,32 +70,44 @@ const Main = (props) => {
 
         <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact Form</h2>
-          <form
+          <NetlifyForm
             className="contact-form"
             action="/thanks"
             name="contact"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            enableRecaptcha
+            onSuccess={(response, context) => {
+              console.log('Successfully sent form data to Netlify Server')
+              context.formRef.current.reset()
+            }}
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+            {({ handleChange, success, error }) => (
+              <>
+                <Honeypot />
+                <Recaptcha siteKey={SITE_RECAPTCHA_KEY} theme="dark" invisible />
+                <input type="hidden" name="form-name" value="contact" />
+                <div className="field half first">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div className="field half">
+                  <label htmlFor="email">Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div className="field">
+                  <label htmlFor="message">Message</label>
+                  <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <ul className="actions">
+                  <li><input type="submit" value="Send Message" className="special" /></li>
+                  <li><input type="reset" value="Reset" /></li>
+                </ul>
+              </>
+            )}
+          </NetlifyForm>
+          
           <ul className="icons">
             <li>
               <Link to="https://twitter.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Twitter">

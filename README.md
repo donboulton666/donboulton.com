@@ -1,6 +1,6 @@
 # gatsby-starter-dimension
 
-**This is a starter for Gatsby.js V4.11.0**
+**This is a starter for Gatsby.js V4.13.0**
 
 **The older V1 version of this starter can be found at:**
 <br/>
