@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql, Link, Script } from 'gatsby'
 import CookieConsent from "react-cookie-consent"
 import { SiGnuprivacyguard } from "@react-icons/all-files/si/SiGnuprivacyguard"
 
@@ -40,7 +39,7 @@ const Layout = ({ children, location }) => {
       `}
       render={data => (
         <>
-          <Helmet
+          <Script
             title={data.site.siteMetadata.title}
             meta={[
               { name: 'description', content: 'Donald Boulton Personal Web Site' },
@@ -49,7 +48,7 @@ const Layout = ({ children, location }) => {
           >
             <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
             <html lang="en" />
-          </Helmet>
+          </Script>
           {content}
           <CookieConsent
             enableDeclineButton 

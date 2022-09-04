@@ -56,7 +56,7 @@ const Privacy = () => (
           />
             Back to Homepage
         </Link>
-        <Link to="https://publiuslogic.com" className="button -outline" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
+        <Link to="https://publiuslogic.com/privacy" className="button -outline" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
           Full Privacy Page 
           <RiArrowRightSLine className="button-icon"
             style={{

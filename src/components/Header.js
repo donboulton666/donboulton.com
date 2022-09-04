@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import PropTypes from 'prop-types'
 import Bio from "./bio"
 
@@ -11,8 +10,8 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Donald Boulton</h1>
-                <p>The Books Of Life <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">Bibwoe.com</Link>&nbsp;Part Of&nbsp;<Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">Mansbooks.com</Link><br />
-                  An A Logic And Government Site&nbsp;<Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">PubliusLogic.com</Link>
+                <p>The Books Of Life <a href="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">Bibwoe.com</a>&nbsp;Part Of&nbsp;<a href="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">Mansbooks.com</a><br />
+                  An A Logic And Government Site&nbsp;<a href="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">PubliusLogic.com</a>
                 </p>
             </div>
         </div>

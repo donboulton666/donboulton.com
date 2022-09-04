@@ -3,11 +3,7 @@
   command = "gatsby build"
   NETLIFY_USE_YARN = "true"
 [build.environment]
-  NODE_VERSION = "16.15.0"
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
-  [plugins.inputs]
-  output_path = "reports/lighthouse.html"
+  NODE_VERSION = "16.16.0"
 [[plugins]]
   package = "@netlify/plugin-gatsby"    
 [[headers]]
@@ -84,7 +80,6 @@
     Vary = "Accept-Encoding"
     Permissions-Policy = '''
       accelerometer=(self),
-      ambient-light-sensor=(self),
       autoplay=(self),
       camera=(self),
       encrypted-media=(self),
@@ -96,10 +91,7 @@
       midi=(self),
       payment=(self),
       picture-in-picture=(self),
-      speaker=(self),
       usb=(self),
-      vibrate=(self),
-      vr=(self)
     '''
 [[headers]]
   for = "/static/*"
