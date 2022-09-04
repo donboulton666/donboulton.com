@@ -1,8 +1,8 @@
 # gatsby-starter-dimension
 
-**Built with React v18.0.2**
+**Built with React v18.2.0**
 
-**This is a starter for Gatsby.js v4.19.0**
+**This is a starter for Gatsby.js v4.22.0**
 
 **The older V1 version of this starter can be found at:**
 <br/>

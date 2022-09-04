@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Donald Boulton - Dimension V4",
-    author: "Donald Boulton",
-    siteUrl: "https://donboulton.com",
-    siteImage: "/static/assets/bg.jpg",
-    description: "A Gatsby.js V4 Starter based on Dimension by HTML5 UP"
+    title: 'Donald Boulton - Dimension V4',
+    author: 'Donald Boulton',
+    siteUrl: 'https://donboulton.com',
+    siteImage: '/static/assets/bg.jpg',
+    description: 'A Gatsby.js V4 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
     {
@@ -47,7 +47,7 @@ module.exports = {
           trackingId: 'UA-30162465-2', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
-          allowAdFeatures: false // default
+          allowAdFeatures: false, // default
         },
         googleTagManager: {
           trackingId: 'GTM-T2NFHJ', // leave empty if you want to disable the tracker
@@ -68,7 +68,7 @@ module.exports = {
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        environments: ['production', 'development'],
       },
     },
     'gatsby-plugin-sass',
