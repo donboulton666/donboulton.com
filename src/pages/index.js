@@ -123,3 +123,70 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
+
+export const Head = () => (
+  <>
+    <title>Don Boulton</title>
+    <meta name="description" content="Don Boulton Home" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+    <script type="application/ld+json">
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        about: {
+          '@id': 'https://donboulton.com',
+        },
+        audience: 'public',
+        abstract:
+          'PubliusLogic has Topics on Creation, Law, USA and World Governments, Life Matters. Our Main focus is the Re-Creation of Mankind to the Spiritual Beings you have forgotten about, as you only live in the Flesh. Your Soul and Spirit you deny.',
+        author: {
+          '@id': 'https://donboulton.com',
+        },
+        copyrightHolder: {
+          '@id': 'https://publiuslogic.com',
+        },
+        copyrightYear: '2022',
+        creator: {
+          '@id': 'https://publiuslogic.com',
+        },
+        description: 'PubliusLogic name means to Publish Logic',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://donboulton.com/static/assets/bg.jpg',
+          width: '1400',
+          height: '450',
+        },
+        inLanguage: 'en',
+        name: 'PubliusLogic',
+        publisher: {
+          '@id': 'https://publiuslogic.com',
+        },
+        url: 'https://publiuslogic.com',
+      })}
+    </script>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: 'Home Page',
+        url: 'https://donboulton.com/',
+        image: {
+          '@type': 'ImageObject',
+          url: 'ttps://donboulton.com/static/assets/bg.jpg',
+          width: '1400',
+          height: '450',
+        },
+        publisher: {
+          '@type': 'PubliusLogic',
+          name: 'PubliusLogic',
+        },
+        license: 'http://publiuslogic.com/blog/0bsd-licence',
+      })}
+    </script>
+  </>
+)

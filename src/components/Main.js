@@ -62,7 +62,6 @@ const Main = (props) => {
           >
             Bibwoe.com
           </a>
-          .
         </p>
         <p>
           In the Beginning, everything was in Chaos, within the midst, “Void of
