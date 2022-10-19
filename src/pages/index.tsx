@@ -87,16 +87,9 @@ class IndexPage extends React.Component {
   render() {
     return (
       <main location={this.props.location}>
-        <div
-          className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
-          }`}
-        >
+        <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
+            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
@@ -108,12 +101,7 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg">
-            <StaticImage
-              id="bg"
-              formats={['auto', 'webp']}
-              src="../../static/assets/bg.jpg"
-              alt="PubliusLogic Image"
-            />
+            <StaticImage id="bg" formats={['auto', 'webp']} src="../../static/assets/bg.jpg" alt="PubliusLogic Image" />
           </div>
         </div>
       </main>
@@ -127,12 +115,7 @@ export const Head = () => (
   <>
     <title>Don Boulton</title>
     <meta name="description" content="Don Boulton Home" />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      title="Sitemap"
-      href="/sitemap.xml"
-    />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <script type="application/ld+json">
       {JSON.stringify({
         '@context': 'https://schema.org',

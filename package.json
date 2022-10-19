@@ -31,15 +31,22 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
+    "@graphql-eslint/eslint-plugin": "^3.10.3",
     "@netlify/functions": "^1.0.0",
     "@netlify/plugin-gatsby": "^3.4.8",
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "@types/react-netlify-form": "^2.1.2",
+    "eslint": "^8.25.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-netlify": "^5.0.1",
     "prettier": "^2.7.1",
