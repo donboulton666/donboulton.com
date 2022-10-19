@@ -1,12 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react'
+import { ReactNode } from 'react'
 import { StaticQuery, graphql, Link, Script } from 'gatsby'
 import CookieConsent from 'react-cookie-consent'
 import { SiGnuprivacyguard } from '@react-icons/all-files/si/SiGnuprivacyguard'
+import '@/assets/scss/main.scss'
 
-import '../assets/scss/main.scss'
+interface LayoutProps {
+  children: ReactNode
+  location: string
+}
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location }: LayoutProps) => {
   let content
 
   if (location && location.pathname === '/') {
@@ -30,7 +34,7 @@ const Layout = ({ children, location }) => {
           }
         }
       `}
-      render={(data) => (
+      render={data => (
         <>
           <Script
             title={data.site.siteMetadata.title}
@@ -42,12 +46,7 @@ const Layout = ({ children, location }) => {
               { name: 'keywords', content: 'Donald Boulton, personal' },
             ]}
           >
-            <link
-              rel="sitemap"
-              type="application/xml"
-              title="Sitemap"
-              href="/sitemap.xml"
-            />
+            <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
             <html lang="en" />
           </Script>
           {content}
@@ -63,8 +62,7 @@ const Layout = ({ children, location }) => {
               textShadow: '2px 2px black',
             }}
             buttonStyle={{
-              background:
-                'radial-gradient(circle at top right, #222, transparent)',
+              background: 'radial-gradient(circle at top right, #222, transparent)',
               color: 'white',
               fontWeight: 'bolder',
               borderRadius: '3px',
@@ -92,10 +90,6 @@ const Layout = ({ children, location }) => {
       )}
     />
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

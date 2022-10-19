@@ -19,8 +19,6 @@
     X-XSS-Protection = "1; mode=block"
     Access-Control-Allow-Origin = '''
       https://donboulton.com,
-      https://graphql.fauna.com,
-      https://graphql.fauna.com/graphql
       https://img.badgesize.io/, 
       https://www.unpkg.com/use-sound/dist/use-sound.esm.js.svg, 
       https://www.google-analytics.com/analytics.js,
@@ -35,7 +33,8 @@
       https://identity.netlify.com, 
       https://media-library.cloudinary.com, 
       https://withspectrum.github.io, 
-      https://cdn.rawgit.com https://api.bitbucket.org, 
+      https://cdn.rawgit.com 
+      https://api.bitbucket.org, 
       https://widget.cloudinary.com, 
       https://www.youtube.com, 
       https://www.youtube.de, 
@@ -62,12 +61,10 @@
       https://connect.facebook.net, 
       https://res.cloudinary.com, 
       https://i.ytimg.com,
-      https://api.github.com
-      https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-      https://stats.g.doubleclick.net/
+      https://api.github.com,
+      https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js,
+      https://stats.g.doubleclick.net/,
       https://www.google.com/recaptcha/api.js
-      https://static.small.chat/messenger.js
-      https://www.gstatic.com/recaptcha/releases/kcXVPRWG7fMILHmzon0--fD3/recaptcha__en.js
     '''      
     Access-Control-Allow-Methods = '''
       POST, 
@@ -81,17 +78,8 @@
     Permissions-Policy = '''
       accelerometer=(self),
       autoplay=(self),
-      camera=(self),
-      encrypted-media=(self),
       fullscreen=(self),
-      geolocation=(self),
-      gyroscope=(self),
-      magnetometer=(self),
-      microphone=(self),
-      midi=(self),
-      payment=(self),
-      picture-in-picture=(self),
-      usb=(self),
+      geolocation=(self)
     '''
 [[headers]]
   for = "/static/*"

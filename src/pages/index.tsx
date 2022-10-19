@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
@@ -87,7 +86,7 @@ class IndexPage extends React.Component {
 
   render() {
     return (
-      <Layout location={this.props.location}>
+      <main location={this.props.location}>
         <div
           className={`body ${this.state.loading} ${
             this.state.isArticleVisible ? 'is-article-visible' : ''
@@ -117,7 +116,7 @@ class IndexPage extends React.Component {
             />
           </div>
         </div>
-      </Layout>
+      </main>
     )
   }
 }

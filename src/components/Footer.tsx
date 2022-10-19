@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { RiHeart2Line } from '@react-icons/all-files/ri/RiHeart2Line'
 import { SiGnuprivacyguard } from '@react-icons/all-files/si/SiGnuprivacyguard'
 
-const Footer = (props) => (
+const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
       &copy; Donald Boulton{' '}
@@ -26,8 +26,7 @@ const Footer = (props) => (
           }}
         />
       </span>{' '}
-      <a href="/privacy">Privacy</a> Built with:{' '}
-      <a href="https://www.gatsbyjs.org/">Gatsby.js v4.22.0</a>
+      <a href="/privacy">Privacy</a> Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js v4.24.4</a>
     </p>
   </footer>
 )

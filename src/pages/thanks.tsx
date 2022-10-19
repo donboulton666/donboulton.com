@@ -1,11 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 import { RiArrowLeftSLine } from '@react-icons/all-files/ri/RiArrowLeftSLine'
 import { RiCheckboxCircleLine } from '@react-icons/all-files/ri/RiCheckboxCircleLine'
-import Layout from '../components/layout'
 
 const Thanks = () => (
-  <Layout>
+  <main>
     <div
       className="wrapper"
       style={{
@@ -31,7 +30,7 @@ const Thanks = () => (
         Lets go back to Homepage
       </Link>
     </div>
-  </Layout>
+  </main>
 )
 
 export default Thanks

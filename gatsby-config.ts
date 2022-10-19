@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby'
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: 'Donald Boulton - Dimension V4',
     author: 'Donald Boulton',
@@ -81,5 +83,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        allPageHeaders: [],
+        mergeSecurityHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: headers => headers,
+        generateMatchPathRewrites: true,
+      },
+    },
   ],
 }
+
+export default config
