@@ -61,7 +61,7 @@ const Privacy = () => (
         Back to Homepage
       </Link>
       <Link
-        to="https://publiuslogic.com/privacy"
+        to="https://publiuslogic.com/blog/privacy"
         className="button -outline"
         rel="noopener noreferrer"
         target="_blank"

@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import { RiHeart2Line } from '@react-icons/all-files/ri/RiHeart2Line'
 import { SiGnuprivacyguard } from '@react-icons/all-files/si/SiGnuprivacyguard'
@@ -26,7 +26,7 @@ const Footer = props => (
           }}
         />
       </span>{' '}
-      <a href="/privacy">Privacy</a> Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js v4.24.4</a>
+      <a href="/privacy">Privacy</a> Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js v5.4.2</a>
     </p>
   </footer>
 )
