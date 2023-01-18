@@ -59,9 +59,9 @@
     "url": "https://github.com/donaldboulton/donboulton.com"
   },
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.12.1"
   },
   "AWS_LAMBDA_JS_RUNTIME": {
-    "node": ">=16.16.0"
+    "node": ">=18.12.1"
   }
 }
