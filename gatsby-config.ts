@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
     author: 'Donald Boulton',
     siteUrl: 'https://donboulton.com',
     siteImage: '/static/assets/bg.jpg',
-    description: 'A Gatsby.js V4 Starter based on Dimension by HTML5 UP',
+    description: 'A Gatsby.js v5 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
     {
@@ -39,37 +39,36 @@ const config: GatsbyConfig = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'static/assets/apple-touch-icon.png', // This path is relative to the root of the site.
+        icon: 'static/assets/apple-touch-icon.png',
       },
     },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-30162465-2', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-google-analytics', // default
-          anonymize: true, // default
-          allowAdFeatures: false, // default
+          trackingId: 'UA-30162465-2',
+          cookieName: 'gatsby-gdpr-google-analytics',
+          anonymize: true,
+          allowAdFeatures: false,
         },
         googleTagManager: {
-          trackingId: 'GTM-T2NFHJ', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-google-tagmanager', // default
-          dataLayerName: 'dataLayer', // default
+          trackingId: 'GTM-T2NFHJ',
+          cookieName: 'gatsby-gdpr-google-tagmanager',
+          dataLayerName: 'dataLayer',
         },
         facebookPixel: {
-          pixelId: 'YOUR_FACEBOOK_PIXEL_ID', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-facebook-pixel', // default
+          pixelId: 'YOUR_FACEBOOK_PIXEL_ID',
+          cookieName: 'gatsby-gdpr-facebook-pixel',
         },
         tikTokPixel: {
-          pixelId: 'YOUR_TIKTOK_PIXEL_ID', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-tiktok-pixel', // default
+          pixelId: 'YOUR_TIKTOK_PIXEL_ID',
+          cookieName: 'gatsby-gdpr-tiktok-pixel',
         },
         hotjar: {
           hjid: '2721607',
           hjsv: '6',
-          cookieName: 'gatsby-gdpr-hotjar', // default
+          cookieName: 'gatsby-gdpr-hotjar', 
         },
-        // defines the environments where the tracking should be available  - default is ["production"]
         environments: ['production', 'development'],
       },
     },
