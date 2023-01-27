@@ -1,19 +1,19 @@
 {
   "name": "donald-boulton",
-  "description": "Donald Boulton Gatsby Starter - Dimension V4",
-  "version": "4.24.4",
+  "description": "Donald Boulton Gatsby Starter - Dimension v4",
+  "version": "5.5.0",
   "author": "Donald Boulton",
   "dependencies": {
-    "@gatsbyjs/reach-router": "^2.0.0",
+    "@gatsbyjs/reach-router": "^2.0.1",
     "@react-icons/all-files": "^4.1.0",
-    "gatsby": "^5.4.2",
+    "gatsby": "^5.5.0",
     "gatsby-plugin-gdpr-cookies": "^2.0.9",
-    "gatsby-plugin-manifest": "^5.4.0",
-    "gatsby-plugin-offline": "^6.4.0",
-    "gatsby-plugin-sass": "^6.4.0",
-    "gatsby-plugin-sharp": "^5.4.0",
-    "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-transformer-sharp": "^5.4.0",
+    "gatsby-plugin-manifest": "^5.5.0",
+    "gatsby-plugin-offline": "^6.5.0",
+    "gatsby-plugin-sass": "^6.5.0",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-transformer-sharp": "^5.5.0",
     "react": "^18.2.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
@@ -69,9 +69,9 @@
     "url": "https://github.com/donaldboulton/donboulton.com"
   },
   "engines": {
-    "node": ">=18.12.1"
+    "node": ">=18.13.0"
   },
   "AWS_LAMBDA_JS_RUNTIME": {
-    "node": ">=18.12.1"
+    "node": ">=18.13.0"
   }
 }
