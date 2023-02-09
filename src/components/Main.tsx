@@ -65,7 +65,7 @@ const Main = props => {
           </a>
         </span>
         <p>
-          Mansbooks.com ia Angelina Jordan's Webinar and Videos Site. A place where all of mankind will keep his views on self. Once a year a new page can be added
+          Mansbooks.com is Angelina Jordan's Webinar and Videos Site. A place where all of mankind will keep his views on self. Once a year a new page can be added
           with updates on who you think you are within the context of your species.
         </p>
         <p>
