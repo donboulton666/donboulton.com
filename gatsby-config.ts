@@ -52,8 +52,8 @@ const config: GatsbyConfig = {
           allowAdFeatures: false,
         },
         googleTagManager: {
-          trackingId: 'GTM-T2NFHJ',
-          cookieName: 'gatsby-gdpr-google-tagmanager',
+          trackingId: 'G-6YWM2JY5EH',
+          cookieName: 'ga4',
           dataLayerName: 'dataLayer',
         },
         facebookPixel: {
