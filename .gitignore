@@ -9,4 +9,4 @@ yarn-error.log
 # Build directory
 /public
 .DS_Store
-/netlify/functions/gatsby
+/netlify/functions

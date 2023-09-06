@@ -1,6 +1,5 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 import { StaticImage } from 'gatsby-plugin-image'
 import { RiFacebookBoxFill } from '@react-icons/all-files/ri/RiFacebookBoxFill'
 import { RiTwitterFill } from '@react-icons/all-files/ri/RiTwitterFill'
@@ -65,8 +64,9 @@ const Main = props => {
           </a>
         </span>
         <p>
-          Mansbooks.com is Angelina Jordan's Webinar and Videos Site. A place where all of mankind will keep his views on self. Once a year a new page can be added
-          with updates on who you think you are within the context of your species.
+          Mansbooks.com is Angelina Jordan's Webinar and Videos Site. A place where all of mankind will keep his views
+          on self. Once a year a new page can be added with updates on who you think you are within the context of your
+          species.
         </p>
         <p>
           Who are you and what are you, when the time comes to open the books of life, your views will be compared to
@@ -105,46 +105,29 @@ const Main = props => {
         style={{ display: 'none' }}
       >
         <h2 className="major">Contact Form</h2>
-        <NetlifyForm
-          className="contact-form"
-          action="/thanks"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSuccess={(response, context) => {
-            console.log('Successfully sent form data to Netlify Server')
-            context.formRef.current.reset()
-          }}
-        >
-          {({ handleChange, success, error }) => (
-            <>
-              <Honeypot />
-
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="field half first">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-              <ul className="actions">
-                <li>
-                  <input type="submit" value="Send Message" className="special" />
-                </li>
-                <li>
-                  <input type="reset" value="Reset" />
-                </li>
-              </ul>
-            </>
-          )}
-        </NetlifyForm>
+        <form className="contact-form" action="/thanks" name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="field half first">
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div className="field half">
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div className="field">
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+          </div>
+          <ul className="actions">
+            <li>
+              <input type="submit" value="Send Message" className="special" />
+            </li>
+            <li>
+              <input type="reset" value="Reset" />
+            </li>
+          </ul>
+        </form>
 
         <ul className="icons">
           <li>

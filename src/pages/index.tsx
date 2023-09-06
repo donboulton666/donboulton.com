@@ -1,8 +1,12 @@
 import * as React from 'react'
 import Header from '../components/Header'
-import Main from '../components/Main'
 import Footer from '../components/Footer'
 import { StaticImage } from 'gatsby-plugin-image'
+import loadable from '@loadable/component'
+
+const Main = loadable(() => import('../components/Main'), {
+  fallback: <div>Loading...</div>,
+})
 
 class IndexPage extends React.Component {
   constructor(props) {
