@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
 
   render() {
     return (
-      <main location={this.props.location}>
+      <main location={this.props.location.pathname}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
