@@ -14,13 +14,13 @@ const Header = props => (
           The Books Of Life{' '}
           <a href="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
             Bibwoe.com
-          </a>
-          &nbsp;Part Of&nbsp;
+          </a>{' '}
+          Part Of{' '}
           <a href="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
             Mansbooks.com
           </a>
           <br />
-          An A Logic And Government Site&nbsp;
+          An A Logic And Government Site{' '}
           <a href="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
             PubliusLogic.com
           </a>

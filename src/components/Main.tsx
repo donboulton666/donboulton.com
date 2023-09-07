@@ -105,7 +105,7 @@ const Main = props => {
         style={{ display: 'none' }}
       >
         <h2 className="major">Contact Form</h2>
-        <form className="contact-form" action="/thanks" name="contact" method="POST">
+        <form className="contact-form" action="/api/submit" name="contact" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="form-name" value="contact" />
           <div className="field half first">
             <label htmlFor="name">Name</label>
