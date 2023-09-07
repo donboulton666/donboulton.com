@@ -39,14 +39,14 @@ const config: GatsbyConfig = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'static/assets/apple-touch-icon.png',
+        icon: 'static/apple-touch-icon.png',
       },
     },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-        precachePages: ['/', '/about', '/contact', '/blog/*'],
+        precachePages: ['/', '/thanks'],
         workboxConfig: {
           importWorkboxFrom: 'cdn',
         },
