@@ -24,71 +24,60 @@ const Layout = ({ children, location }: LayoutProps) => {
   }
 
   return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
-          }
-        }
-      `}
-      render={data => (
-        <>
-          <Script
-            title={data.site.siteMetadata.title}
-            meta={[
-              {
-                name: 'description',
-                content: 'Donald Boulton Personal Web Site',
-              },
-              { name: 'keywords', content: 'Donald Boulton, personal' },
-            ]}
-          >
-            <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
-            <html lang="en" />
-          </Script>
-          {content}
-          <CookieConsent
-            enableDeclineButton
-            flipButtons
-            location="bottom"
-            buttonText="Accept"
-            declineButtonText="Decline"
-            cookieName="gatsby-gdpr-google-analytics"
-            style={{
-              background: 'linear-gradient(to right, transparent, #171717)',
-              textShadow: '2px 2px black',
-            }}
-            buttonStyle={{
-              background: 'radial-gradient(circle at top right, #222, transparent)',
-              color: 'white',
-              fontWeight: 'bolder',
-              borderRadius: '3px',
-              border: '1px black',
-              textShadow: '2px 2px black',
-            }}
-          >
-            Don Boulton uses cookies for a better user experience.{' '}
-            <span
-              style={{
-                fontSize: '14px',
-                textAlign: 'center',
-                marginLeft: '20px',
-              }}
-            >
-              <span className="icon -lock">
-                <SiGnuprivacyguard />
-              </span>{' '}
-              <Link to="https://publiuslogic.com/privacy" alt="Privacy Page">
-                Privacy Page
-              </Link>
-            </span>
-          </CookieConsent>
-        </>
-      )}
-    />
+    <>
+      <Script>
+        <meta name="og:type" content="webpage" />
+        <meta name="description" content="Donald Boulton Personal Web Site" />
+        <meta name="og:type" content="webpage" />
+        <meta name="keywords" content="donaldboulton" />
+        <meta name="robots" content="index" />
+        <link href="https://github.com/donaldboulton" rel="me" />
+        <link href="https://twitter.com/donboulton" rel="me" />
+        <link href="https://facebook.com/don.boulton" rel="me" />
+        <link href="https://www.instagram.com/boulton3662" rel="me" />
+        <link href="https://www.linkedin.com/donboulton" rel="me" />
+        <link href="mailto:donaldboulton@gmail.com" rel="me" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+        <html lang="en" />
+      </Script>
+      {content}
+      <CookieConsent
+        enableDeclineButton
+        flipButtons
+        location="bottom"
+        buttonText="Accept"
+        declineButtonText="Decline"
+        cookieName="gatsby-gdpr-google-analytics"
+        style={{
+          background: 'linear-gradient(to right, transparent, #171717)',
+          textShadow: '2px 2px black',
+        }}
+        buttonStyle={{
+          background: 'radial-gradient(circle at top right, #222, transparent)',
+          color: 'white',
+          fontWeight: 'bolder',
+          borderRadius: '3px',
+          border: '1px black',
+          textShadow: '2px 2px black',
+        }}
+      >
+        Don Boulton uses cookies for a better user experience.{' '}
+        <span
+          style={{
+            fontSize: '14px',
+            textAlign: 'center',
+            marginLeft: '20px',
+          }}
+        >
+          <span className="icon -lock">
+            <SiGnuprivacyguard />
+          </span>{' '}
+          <Link to="https://publiuslogic.com/privacy" alt="Privacy Page">
+            Privacy Page
+          </Link>
+        </span>
+      </CookieConsent>
+    </>
   )
 }
 

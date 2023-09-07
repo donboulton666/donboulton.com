@@ -12,7 +12,7 @@ const handler: ExportedHandler = {
       'Cross-Origin-Opener-Policy': 'same-site; report-to="default";',
       'Cross-Origin-Resource-Policy': 'same-site',
       'Access-Control-Allow-Credentials': 'true',
-      "Vary": 'Accept-Encoding',
+      Vary: 'Accept-Encoding',
     }
     const BLOCKED_HEADERS = ['Public-Key-Pins', 'X-Powered-By', 'X-AspNet-Version']
 
