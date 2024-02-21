@@ -2,7 +2,7 @@
 
 **Built with React v18.2.0**
 
-**This is a starter for Gatsby.js v5.5.0**
+**This is a starter for Gatsby.js v5.13.3**
 
 **Built with Typescript**
 
